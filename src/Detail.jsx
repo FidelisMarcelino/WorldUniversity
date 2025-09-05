@@ -33,7 +33,7 @@ export default function Detail(){
   const currencies = data.currencies 
   ? Object.entries(data.currencies)
     .map(([code, value]) => `${value.name} (${code})`)
-    .join(',') 
+    .join(', ') 
   : "Tidak ada data mata uang"
 
   return(
@@ -59,7 +59,7 @@ export default function Detail(){
             <div className="flex flex-row">
               <div className="mr-4">
                 <p className="text-xl font-semibold mt-2">💬 Languages</p>
-                <p className="ml-8">{languages}</p>
+                <p className="ml-8 w-72">{languages}</p>
 
                 <p className="text-xl font-semibold mt-2">🧑‍🤝‍🧑 Population</p>
                 <p className="ml-8">{data.population.toLocaleString()}</p>
