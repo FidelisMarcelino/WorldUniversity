@@ -67,7 +67,7 @@ export default function About(){
                 <h1 className="font-bold text-center text-5xl bg-cyan-100 p-3 m-3 rounded-xl text-blue-700 drop-shadow-lg">About WorldUniversity</h1>
             </div>
 
-            <p className="">
+            <p className="bg-green-200 p-2 rounded-md w-100 flex flex-col justify-center">
                 <span className="text-blue-700 font-bold text-xl">World University</span> adalah sebuah platform pembelajaran global yang dirancang untuk membantu siapa saja
                 mengakses pengetahuan dari berbagai bidang. Kami percaya bahwa
                 pendidikan adalah kunci untuk membuka peluang dan menciptakan masa
@@ -76,15 +76,13 @@ export default function About(){
 
             {/* VISI */}
             <div>
-                <h2 className="text-blue-700 font-bold text-4xl mt-3 text-center">Visi</h2>
-                <p>
-                Menjadi sumber informasi geografis dan demografis terdepan yang menginspirasi rasa ingin tahu global melalui data yang komprehensif, terstruktur, dan disajikan dengan antarmuka yang intuitif bagi pelajar, peneliti, dan siapa pun yang memiliki ketertarikan pada dunia.
-                </p>
+                <h2 className="text-blue-700 font-bold text-4xl mt-5 text-center">Visi</h2>
+                <p className="bg-green-200 p-2 rounded-md w-100">Menjadi sumber informasi geografis dan demografis terdepan yang menyajikan data komprehensif secara terstruktur dan intuitif untuk pelajar, peneliti, dan masyarakat global.                </p>
             </div>
 
             {/* MISI */}
             <div>
-                <h2 className="text-blue-700 font-bold text-4xl my-3 text-center">Misi</h2>
+                <h2 className="text-blue-700 font-bold text-4xl my-3 mt-5 text-center">Misi</h2>
 
                 <ul className="flex flex-row justify-around gap-6">
                     {missions.map((mission, index) => (

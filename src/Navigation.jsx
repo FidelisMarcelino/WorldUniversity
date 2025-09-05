@@ -8,7 +8,9 @@ export default function Navigation(){
     return(
         <>
             <div className="flex items-center justify-between p-3 rounded-b bg-blue-400">
-                <div className="flex gap-2">
+                <div className="flex gap-2 items-center">
+                    <img src="world.png" className="h-8 w-8" />
+
                     <Link to="home">
                         <button className={`${loc.pathname.startsWith("/home") ? 'bg-blue-600 rounded-lg px-2 text-white' : ""}`}>Home</button>
                     </Link>
