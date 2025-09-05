@@ -111,7 +111,7 @@ export default function Home() {
         </select>
       </div>
 
-      <div className="grid xl:grid-cols-5 gap-4 mt-2">
+      <div className="grid lg:grid-cols-5 gap-4 mt-2">
         {loading ? (
           <p className="col-span-full text-center">Loading data...</p>
         ) : filteredCountries.length > 0 ? (
