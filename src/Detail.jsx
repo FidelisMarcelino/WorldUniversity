@@ -7,14 +7,18 @@ export default function Detail() {
   const { name } = useParams();
 
   useEffect(() => {
-    axios
-      .get(`https://restcountries.com/v3.1/name/${name}?fullText=true`)
-      .then((response) => {
+    const fetchData = async () => {
+      try {
+        const response = await axios.get(
+          `https://restcountries.com/v3.1/name/${name}?fullText=true`,
+        );
         setData(response.data[0]);
-      })
-      .catch((error) => {
+      } catch (error) {
         console.log(error);
-      });
+      }
+    };
+
+    fetchData();
   }, [name]);
 
   if (!data) {
