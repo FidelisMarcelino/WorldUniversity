@@ -73,7 +73,7 @@ export default function Home() {
       <h1 className="font-bold text-3xl mb-3 text-center">🌍 Country Search</h1>
 
       {/* Region */}
-      <div className="flex gap-4 justify-center mb-4">
+      <div className="flex flex-col gap-4 justify-center mb-4">
         <select
             value={selectedRegion}
             onChange={(e) => setSelectedRegion(e.target.value)}
@@ -111,7 +111,7 @@ export default function Home() {
         </select>
       </div>
 
-      <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-4 mt-2">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-4 mt-2">
         {loading ? (
           <p className="col-span-full text-center">Loading data...</p>
         ) : filteredCountries.length > 0 ? (

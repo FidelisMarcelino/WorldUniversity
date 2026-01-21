@@ -53,7 +53,7 @@ export default function Home(){
     <>
       <div className=" px-8">
         <section className="text-center my-12 p-8 bg-blue-100 rounded-lg shadow-lg">
-          <h1 className="text-5xl font-bold text-blue-800 mb-4">Welcome to WorldUniversity</h1>
+          <h1 className="flex-col text-2xl md:text-5xl font-bold text-blue-800 mb-4">Welcome to WorldUniversity</h1>
           <p className="text-xl max-w-3xl mx-auto mb-6">
             WorldUniversity adalah platform interaktif untuk menjelajahi informasi terperinci tentang negara-negara di seluruh dunia.
             Cari, bandingkan, dan pelajari data penting seperti populasi, mata uang, bahasa, dan lainnya.

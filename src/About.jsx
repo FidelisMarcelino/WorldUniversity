@@ -64,7 +64,7 @@ export default function About(){
     return(
         <div>
             <div className="rounded-lg flex justify-center">
-                <h1 className="font-bold text-center text-5xl bg-cyan-100 p-3 m-3 rounded-xl text-blue-700 drop-shadow-lg">About WorldUniversity</h1>
+                <h1 className="font-bold text-center text-3xl md:text-5xl bg-cyan-100 p-3 m-3 rounded-xl text-blue-700 drop-shadow-lg">About WorldUniversity</h1>
             </div>
 
             <p className="bg-green-200 p-2 rounded-md w-100 flex flex-col justify-center">
@@ -84,7 +84,7 @@ export default function About(){
             <div>
                 <h2 className="text-blue-700 font-bold text-4xl my-3 mt-5 text-center">Misi</h2>
 
-                <ul className="flex flex-row justify-around gap-6">
+                <ul className="flex flex-col md:flex-row items-center gap-6">
                     {missions.map((mission, index) => (
                         <li key={index} className="text-center flex flex-col w-48">
                             <div>
@@ -101,7 +101,7 @@ export default function About(){
             <div>
                 <h2 className="text-blue-700 font-bold text-4xl my-6 text-center">Tim Developer</h2>
 
-                <ul className="flex flex-wrap justify-around g-6">
+                <ul className="flex flex-wrap justify-around gap-6">
                     {teams.map((team, index) => (
                         <li key={index} className="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transform hover:scale-105 transition-all duration-300 ease-in-out flex flex-col items-center text-center w-48">
                             <div className="w-24 h-24 bg-gray-200 rounded-full mb-4">
