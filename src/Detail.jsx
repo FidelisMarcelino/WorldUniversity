@@ -5,8 +5,8 @@ import { Link, useParams } from "react-router-dom"
 export default function Detail(){
   const [data, setData] = useState()
   const {name} = useParams()
-
-  function ambilData(){
+  
+  useEffect(()=>{
     axios.get(`https://restcountries.com/v3.1/name/${name}?fullText=true`)
       .then(function (response) {
           setData(response.data[0])
@@ -18,11 +18,7 @@ export default function Detail(){
       })
       .finally(function () {
           console.log("Done")
-      });    
-  }
-  
-  useEffect(()=>{
-    ambilData();
+      }); 
   }, [])
 
   if(!data){

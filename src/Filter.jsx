@@ -26,11 +26,11 @@ export default function Home() {
         setCountries(response.data)
 
         const allRegions = response.data.map(country => country.region)
-        const uniqueRegions = [... new Set(allRegions)].sort()
+        const uniqueRegions = [...new Set(allRegions)].sort()
         setRegions(uniqueRegions)
 
         const allLanguages = response.data.flatMap(country => Object.values(country.languages || {}))
-        const uniqueLanguages = [... new Set(allLanguages)].sort()
+        const uniqueLanguages = [...new Set(allLanguages)].sort()
         setLanguages(uniqueLanguages)
 
       } catch(error){
