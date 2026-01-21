@@ -2,7 +2,7 @@ import axios from "axios";
 import { useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
 
-export default function Home() {
+export default function Filter() {
   const [countries, setCountries] = useState([]);
   const [loading, setLoading] = useState(false);
   const inputRef = useRef(null)
