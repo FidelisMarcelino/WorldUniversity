@@ -61,7 +61,7 @@ export default function Home(){
 
           <Link 
             to="/countrySearch"
-            className="inline-block bg-blue-600 text-white font-semibold py-3 px-8 rounded-full hover: bg-blue-700 transition duration-300"
+            className="inline-block bg-blue-600 text-white font-semibold py-3 px-8 rounded-full hover:bg-blue-700 transition duration-300"
           >
             Mulai Jelajahi Sekarang!
           </Link>
