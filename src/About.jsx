@@ -1,14 +1,4 @@
 export default function About(){
-    const backgroundImagePath = "/backgroundImage.jpg"
-
-    const teamMember = [
-        { name: "Andi", role: "Front-End Developer" }, // Contoh URL gambar
-        { name: "Budi", role: "Back-End Developer" },
-        { name: "Citra", role: "UI/UX Designer" },
-        { name: "Dewi", role: "Project Manager" },
-        { name: "Eko", role: "QA Engineer" },
-    ]
-
     const missions = [
         {
             text: "Menyediakan Data Akurat dan Terkini.",

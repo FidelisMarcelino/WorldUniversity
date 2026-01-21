@@ -1,6 +1,6 @@
 import axios from "axios";
 import { useEffect, useRef, useState } from "react";
-import { data, Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export default function Home() {
   const [countries, setCountries] = useState([]);
@@ -13,7 +13,6 @@ export default function Home() {
   const [languages, setLanguages] = useState([])
   const [selectedLanguage, setSelectedLanguage] = useState("")
 
-  const [showIndependent, setShowIndependent] = useState(true)
   const [selectedIndependent, setSelectedIndependent] = useState("")
 
   const [filteredCountries, setFilteredCountries] = useState([])
